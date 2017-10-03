@@ -1,0 +1,5 @@
+<child-cmp #child1 [childname]="'자식1'"></child-cmp>,{{child1.childname}},{{child1.getName}} <br>
+<child-cmp #child2 [childname]="'자식2'"></child-cmp>,{{child2.childname}},{{child2.getName}} <br>
+<child-cmp #child3 [childname]="'자식3'"></child-cmp>,{{child3.childname}},{{child3.getName}} <br><br>
+
+<div *ngFor="let i of children">{{i.childname}}</div>

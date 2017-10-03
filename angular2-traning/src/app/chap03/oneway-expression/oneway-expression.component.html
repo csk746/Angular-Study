@@ -1,0 +1,8 @@
+{{greeting}}<br>
+<input type="text" [value]="greeting">
+<input type="text" bind-value="greeting">
+<input type="text" [attr.value]="greeting">
+<input type="text" [value]="1+2"><br>
+<button [ngClass]="myClass">BUTTON1</button><br>
+<button class="{{myClass}}">BUTTON2</button><br>
+<button class="{{'italic-style'}}">BUTTON3</button><br>

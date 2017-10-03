@@ -1,0 +1,7 @@
+<input #num1 type="number" value="{{init.num1}}" (input)="0"> +
+<input #num2 type="number" value="{{init.num2}}" (input)="0">
+= {{num1.valueAsNumber + num2.valueAsNumber}}<br>
+
+<input ref-number1 type="number" value="{{init.num1}}" (input)="0"> +
+<input #number2 type="number" value="{{init.num2}}" (input)="0">
+= {{number1.valueAsNumber + number2.valueAsNumber}}<br>

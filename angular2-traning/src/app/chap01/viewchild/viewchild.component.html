@@ -1,0 +1,12 @@
+<div>
+    <item status="false" *ngIf="isShow==false"></item>
+    <item status="true" *ngIf="isShow==true"></item>
+</div>
+<div>
+    <button (click)="toggle()">선택</button><br>
+    isShow : {{isShow}} <br>
+    status : {{status}} <br>
+</div>
+<div>
+    <item-component (click)="display()"></item-component>
+</div>

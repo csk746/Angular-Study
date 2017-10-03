@@ -1,0 +1,16 @@
+<select [(ngModel)]="city">
+  <option *ngFor="let c of cities" [value]="c.eng">{{c.han}}</option>
+</select>
+
+<select (change)="city=$event.target.value">
+  <option *ngFor="let c of cities" [value]="c.eng" [selected]="city==c.eng?true:null">{{c.han}}</option>
+</select>
+<br>
+
+<input [(ngModel)]="city">
+<input [value]="city" (input)="city=$event.target.value">
+<br>
+
+<span *ngFor="let c of cities" >
+  <input type="radio" [checked]="(c.eng==city?true:null)" (click)="city=$event.target.value" [value]="c.eng" name="city">{{c.han}}
+</span>
